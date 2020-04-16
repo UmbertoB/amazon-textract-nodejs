@@ -1,0 +1,2 @@
+script : index.ts
+name   : amazon-textract-nodejs

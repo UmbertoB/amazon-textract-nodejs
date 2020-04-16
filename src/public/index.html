@@ -1,0 +1,18 @@
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body style="text-align: center;">
+
+    <img src="./assets/textract-logo.png" alt="textract-logo" style="margin-top: 20px;">   
+
+    <form action='api/textract/simplified' method='post' encType="multipart/form-data">
+        <input type="file" name="file" />
+        <input type='submit' value='Text Reading' />
+        <input type='submit' value='Complete Reading' formaction="api/textract" />
+    </form>	
+
+</body>
+</html>
