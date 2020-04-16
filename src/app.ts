@@ -40,10 +40,8 @@ class Application {
     }
 
     public startServer(): Promise<boolean> {
-        console.log(process.env);
-        
         return new Promise(resolve => {
-            this.app.listen(process.env.PORT || 8080, () => {
+            this.app.listen(process.env.PORT || this.config.port, () => {
                 this.logger.info(`Server started at http://${this.config.host}:${this.config.port}`);
                 resolve(true);
             }).on('error', nodeErrorHandler);
